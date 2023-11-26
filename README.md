@@ -80,7 +80,7 @@ Add your libraries and versions (preference LTS) inside the package.json
 
 Second:
 
-At the very least you need to stop the current container from the pokedex application, to release used port
+At the very least you need to stop the current container from the application, to release used port
 
 ```bash
 
