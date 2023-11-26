@@ -1,5 +1,5 @@
 import { DashboardContainer } from "../containers/Dashboard";
-import { NotFoundContainer } from "../containers/NoutFound";
+import { NotFoundContainer } from "../containers/NotFound";
 import { SigninContainer } from "../containers/Signin";
 import { PrivateRoute } from "./PrivateRoute";
 
