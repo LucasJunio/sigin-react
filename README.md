@@ -41,12 +41,12 @@ This application is a demonstration how to implement a signin in react.js using 
 - [GitHub](https://github.com/)
 - [Docker](https://www.docker.com/resources/what-container)
 - [React.js](https://react.dev/)
-- [MUI](https://mui.com/)
-- [Formik](https://formik.org/)
-- [Yup](https://www.npmjs.com/package/yup)
 
 ## 1.2. Auxiliary libs
 
+- [MUI](https://mui.com/)
+- [Formik](https://formik.org/)
+- [Yup](https://www.npmjs.com/package/yup)
 - [React-redux](https://react-redux.js.org/)
 - [Reduxjs-toolkit](https://redux-toolkit.js.org/)
 - [Axios](https://axios-http.com/ptbr/docs/intro)
