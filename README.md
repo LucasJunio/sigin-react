@@ -34,6 +34,8 @@ Beyond is good to has an editor for to work with the code like [VSCode](https://
 
 This application is a demonstration how to implement a signin in react.js using several libraries and technologies.
 
+![Add a new library](public/.docs/gifs/example.gif)
+
 ## 1.1. Stack
 
 - [Typescript](https://www.typescriptlang.org/.docs/handbook/typescript-in-5-minutes.html)
