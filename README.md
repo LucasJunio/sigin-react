@@ -32,7 +32,7 @@ Beyond is good to has an editor for to work with the code like [VSCode](https://
 
 # 1. Overview
 
-This application is a demonstration how to implement a signin in react.js using several libraries.
+This application is a demonstration how to implement a signin in react.js using several libraries and technologies.
 
 ## 1.1. Stack
 
@@ -47,8 +47,10 @@ This application is a demonstration how to implement a signin in react.js using 
 - [MUI](https://mui.com/)
 - [Formik](https://formik.org/)
 - [Yup](https://www.npmjs.com/package/yup)
+- [Redux](https://redux.js.org/)
 - [React-redux](https://react-redux.js.org/)
 - [Reduxjs-toolkit](https://redux-toolkit.js.org/)
+- [Redux-persist](https://www.npmjs.com/package/redux-persist)
 - [Axios](https://axios-http.com/ptbr/docs/intro)
 
 # 2. 🔬 How To Run
