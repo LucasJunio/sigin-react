@@ -151,8 +151,17 @@ Main folder tree and your goals
 
 C:.
 
-- ├───.vscode - configuration settings specific to the Visual Studio Code (VS Code).
-- ├───app - entry point of your application, where you start your app.
+- ├───public
+- └───src
+  - ├───assets
+  - ├───components - This is where you would put your reusable React components.
+  - ├───containers - Components that combine smaller components to create more complex UI elements or pages.
+  - │ ├───Dashboard
+  - │ ├───NotFound
+  - │ └───Signin
+  - ├───routes
+  - ├───services
+  - └───store - This folder could house the state management.
 
 # 5. Recommended Extensions
 
