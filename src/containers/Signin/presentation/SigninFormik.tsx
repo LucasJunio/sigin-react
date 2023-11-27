@@ -1,5 +1,8 @@
+import { useDispatch } from "react-redux";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import type { AppDispatch } from "../../../store";
+import { signin } from "../../../store/ducks/Signer";
 
 type Signin = {
   email: string;
@@ -7,6 +10,8 @@ type Signin = {
 };
 
 export const SigninFormik = () => {
+  const dispatch = useDispatch<AppDispatch>();
+
   const validationSchema = yup.object({
     email: yup
       .string()
@@ -26,7 +31,7 @@ export const SigninFormik = () => {
         email,
         password,
       };
-      console.log(body);
+      dispatch(signin(body));
     },
   });
 

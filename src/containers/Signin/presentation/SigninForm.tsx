@@ -13,15 +13,7 @@ import { CopyrightComponent } from "../../../components/utils/Copyright";
 import { SigninFormik } from "./SigninFormik";
 import { IconButton, InputAdornment } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import Snackbar from "@mui/material/Snackbar";
-import MuiAlert, { AlertProps } from "@mui/material/Alert";
-
-const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
-  props,
-  ref
-) {
-  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-});
+import { SnackbarComponent } from "../../../components/Snackbar";
 
 export const SigninForm = () => {
   const formik = SigninFormik();
@@ -31,17 +23,6 @@ export const SigninForm = () => {
 
   const handleClick = () => {
     setOpen(true);
-  };
-
-  const handleClose = (
-    event?: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
-    if (reason === "clickaway") {
-      return;
-    }
-
-    setOpen(false);
   };
 
   const handleClickShowPassword = () => {
@@ -144,16 +125,14 @@ export const SigninForm = () => {
         </Grid>
         <CopyrightComponent sx={{ mt: 5 }} />
       </Box>
-      <Snackbar
-        anchorOrigin={{ vertical: "top", horizontal: "right" }}
-        open={open}
-        onClose={handleClose}
-        autoHideDuration={2000}
-      >
-        <Alert onClose={handleClose} severity="info" sx={{ width: "100%" }}>
-          This feature will be implemented in future
-        </Alert>
-      </Snackbar>
+      <SnackbarComponent
+        props={{
+          open: open,
+          setOpen: setOpen,
+          severity: "info",
+          message: "This feature will be implemented in future",
+        }}
+      />
     </Box>
   );
 };

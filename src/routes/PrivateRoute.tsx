@@ -1,4 +1,6 @@
+import { useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
+import { RootState } from "../store";
 
 interface Props {
   component: React.ComponentType;
@@ -8,7 +10,7 @@ interface Props {
 export const PrivateRoute: React.FC<Props> = ({
   component: RouteComponent,
 }) => {
-  const signer = true;
+  const signer = useSelector((state: RootState) => state.signer);
 
   if (signer) {
     return <RouteComponent />;
